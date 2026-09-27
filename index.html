@@ -245,4 +245,17 @@
   </footer>
 
 </body>
+  <script>
+function sendWhatsApp() {
+  const name = document.getElementById("name").value;
+  const message = document.getElementById("message").value;
+
+  const text = "Hello, my name is " + name + ". " + message;
+
+  window.open(
+    "https://wa.me/917897673266?text=" + encodeURIComponent(text),
+    "_blank"
+  );
+}
+</script>
 </html>
